@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #444;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body .container {
+    margin-top: 50px;
+    display: flex;
+}
+
+body .container .mainLeft {
+    flex: 1;
+    order: 1;
+}
+
+body .container .mainClock {
+    flex: 2;
+    order: 2;
+    background: #fff;
+    width: 360px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+body .container .mainClock .clock {
+    margin: 10px auto;
+    background: #bbb;
+    width: 90%;
+    height: 80px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    font-size: 40px;
+}
+
+body .container .mainClock .clock .hour {
+    margin: 5px auto;
+    background: #333;
+    width: 25%;
+    height: 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+body .container .mainClock .clock .hour .hoursDisplay {
+    color: #fff;
+    margin-top: 10px;
+}
+
+body .container .mainClock .clock .minute {
+    margin: 5px auto;
+    background: #333;
+    width: 22%;
+    height: 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+body .container .mainClock .clock .minute .minutesDisplay {
+    color: #fff;
+    margin-top: 10px;
+}
+
+body .container .mainClock .clock .sec {
+    margin: 5px auto;
+    background: #333;
+    width: 25%;
+    height: 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+body .container .mainClock .clock .sec .secondsDisplay {
+    color: #fff;
+    margin-top: 10px;
+}
+
+body .container .mainClock .clock .separator {
+    font-family: serif;
+    font-size: 50px;
+    color: #fff;
+    margin-top: 4px;
+}
+
+body .container .mainRight {
+    flex: 1;
+    order: 3;
+}
+
+@media (max-width: 640px) {
+    body {
+        background: #1AA974;
+    }
+
+    .secondsDisplay,
+    .minutesDisplay,
+    .hoursDisplay {
+        font-size: 30px;
+        padding-top: 8px;
+    }
+}
+
+@media (max-width: 321px) {
+    body {
+        background: blue;
+    }
+
+    .secondsDisplay,
+    .minutesDisplay,
+    .hoursDisplay {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+}
